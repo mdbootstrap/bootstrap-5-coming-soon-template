@@ -6,16 +6,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Material Design for Bootstrap</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-      <!--Main Navigation-->
+  <!--Main Navigation-->
   <header>
     <!-- Intro settings -->
     <style>
@@ -41,7 +39,7 @@
           <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy"
             style="margin-top: -3px;" />
         </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
           aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -93,7 +91,7 @@
       style="background-image: url('https://mdbootstrap.com/img/new/slides/205.jpg');">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white px-4">
+          <div class="text-white px-4" data-mdb-theme="dark">
             <h1 class="mb-3">Coming Soon!</h1>
 
             <!-- Time Counter -->
@@ -103,9 +101,9 @@
 
             <p>Until then have a look at our Free Bootstrap 5 tutorials</p>
 
-            <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button"
+            <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" data-mdb-ripple-init
               rel="nofollow" target="_blank">Start tutorial</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank"
+            <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank" data-mdb-ripple-init
               role="button">Download MDB UI KIT</a>
           </div>
         </div>
@@ -135,19 +133,19 @@
           <div class="col-md-6 gx-5 mb-4">
             <form>
               <!-- Name input -->
-              <div class="form-outline mb-4">
+              <div class="form-outline mb-4" data-mdb-input-init>
                 <input type="text" id="form5Example1" class="form-control" />
                 <label class="form-label" for="form5Example1">Name</label>
               </div>
 
               <!-- Email input -->
-              <div class="form-outline mb-4">
+              <div class="form-outline mb-4" data-mdb-input-init>
                 <input type="email" id="form5Example2" class="form-control" />
                 <label class="form-label" for="form5Example2">Email address</label>
               </div>
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
+              <button type="submit" class="btn btn-primary btn-block mb-4" data-mdb-ripple-init>
                 Subscribe
               </button>
             </form>
@@ -162,11 +160,11 @@
   <!--Footer-->
   <footer class="bg-light text-lg-start">
     <div class="py-4 text-center">
-      <a role="button" class="btn btn-primary btn-lg m-2"
+      <a role="button" class="btn btn-primary btn-lg m-2" data-mdb-ripple-init
         href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
         Learn Bootstrap 5
       </a>
-      <a role="button" class="btn btn-primary btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank">
+      <a role="button" class="btn btn-primary btn-lg m-2" data-mdb-ripple-init href="https://mdbootstrap.com/docs/standard/" target="_blank">
         Download MDB UI KIT
       </a>
     </div>
@@ -175,19 +173,19 @@
 
     <div class="text-center py-4 align-items-center">
       <p>Follow MDB on social media</p>
-      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button"
+      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button" data-mdb-ripple-init
         rel="nofollow" target="_blank">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+      <a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow" data-mdb-ripple-init
         target="_blank">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+      <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow" data-mdb-ripple-init
         target="_blank">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
+      <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow" data-mdb-ripple-init
         target="_blank">
         <i class="fab fa-github"></i>
       </a>
@@ -234,8 +232,6 @@
       }, 1000);
     </script>
     <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
 </body>
 </html>
